@@ -13,7 +13,7 @@
 			
   			//redirecting user to the google drive's locations where the game is available to download.
   			//change the location url to redirect to a website of your choice.
-  			header("Location: https://drive.google.com/file/d/0B6gbXN_c6lAQWGF1alVfSDNEREE/view");
+  			header("Location: https://www.cleanenergycouncil.org.au/account/login");
 			exit();
 			
 			
